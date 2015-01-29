@@ -2,3 +2,16 @@ cathy:
     name: Cathy Huang
     email: cathy.huang@vpon.com
     password_digest: <%= User.digest('password') %>
+
+jubbie:
+    name: Jubbie Huang
+    email: 123@vpon.com
+    password_digest: <%= User.digest('password') %>
+
+
+ <% 30.times do |n| %>
+user_<%= n %>:
+    name:  <%= "User #{n}" %>
+    email: <%= "user-#{n}@example.com" %>
+    password_digest: <%= User.digest('password') %>
+<% end %>
