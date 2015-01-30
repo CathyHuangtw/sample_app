@@ -2,6 +2,7 @@ cathy:
     name: Cathy Huang
     email: cathy.huang@vpon.com
     password_digest: <%= User.digest('password') %>
+    admin: true
 
 jubbie:
     name: Jubbie Huang
